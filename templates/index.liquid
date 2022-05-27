@@ -1,6 +1,6 @@
-{% assign collection = products %}
+{% assign collection = collections['all'] %}
 <ul>
   {% for name in collection.products %}
-    <li>{{name}}</li>
+    <li>{{name.title}}</li>
   {%endfor%}  
 </ul>
