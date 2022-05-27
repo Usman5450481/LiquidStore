@@ -1,10 +1,12 @@
 {% assign collection = collections['all'] %}
 <ul>
   {% for name in collection.products %}
-    <li>
-      {{name.title}}
-      -{{name.price | money}}
-      {{name.available}}
-    </li>
-  {%endfor%}  
+  <li>
+    <a href="{{ name.url }}">
+      {{ name.title }}
+      -{{ name.price | money }}
+      {{ name.available }}
+    </a>
+  </li>
+  {%endfor%}
 </ul>
