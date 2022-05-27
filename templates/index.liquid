@@ -1,2 +1,3 @@
-{% assign variable = 5 | plus: 5  %}
-{{variable}}
+{% assign array_string = 'String,Mike,Bob,Denise,Aryan,Tori'%}
+{% assign array = array_string | split:","%}
+{{array}}
