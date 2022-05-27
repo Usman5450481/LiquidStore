@@ -1,7 +1,7 @@
 {% assign collection = all_products['casual'] %}
 {{collection}}
 <ul>
-  {% for name in collection%}
+  {% for name in collection.products%}
     <li>{{name}}</li>
   {%endfor%}  
 </ul>
