@@ -1,7 +1,6 @@
-{% assign collection = all_products['casual'] %}
-{{collection}}
+{% assign collection = collections['featured-collection'] %}
 <ul>
-  {% for name in collection.products%}
+  {% for name in collection.products %}
     <li>{{name}}</li>
   {%endfor%}  
 </ul>
