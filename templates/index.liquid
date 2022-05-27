@@ -2,7 +2,7 @@
 <ul>
   {% for name in collection.products %}
   <li>
-    <a href="{{ name.url }}">
+    <a href="{{ name.url }}" >
       {{ name.title }}
       -{{ name.price | money }}
       {{ name.available }}
