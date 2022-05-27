@@ -3,7 +3,7 @@
   {% for name in collection.products %}
     <li>
       {{name.title}}
-      -{{name.available}}
+      -{{name | money}}
     </li>
   {%endfor%}  
 </ul>
