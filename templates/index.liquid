@@ -1,7 +1,2 @@
-{% assign array_string = 'String,Mike,Bob,Denise,Aryan,Tori'%} {% assign array =
-array_string | split:","%}
-<ul>
-  {%for name in array%} {%if name.size < 4%}
-  <li>{{ name }}</li>
-  {%endif%} {%endfor%}
-</ul>
+{% assign collection = all_products['casual'] %}
+{{collection.title}}
