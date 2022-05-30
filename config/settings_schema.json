@@ -20,7 +20,8 @@
         "type": "text",
         "id": "message",
         "label": "Message",
-        "default": "Hello!"
+        "default": "Hello!",
+        "placeholder": "Enter Text"
       }
     ]
   }
