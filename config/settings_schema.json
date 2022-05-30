@@ -14,7 +14,13 @@
         "type": "color",
         "id": "link_color",
         "label": "Link Color",
-        "default": "#000"
+        "default": "#fff"
+      },
+      {
+        "type": "text",
+        "id": "message",
+        "label": "Message",
+        "default": "Hello!"
       }
     ]
   }
