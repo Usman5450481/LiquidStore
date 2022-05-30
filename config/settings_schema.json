@@ -21,7 +21,7 @@
         "id": "message",
         "label": "Message",
         "default": "Hello!",
-        "placeholder":"Enter Text"
+        "placeholder": "Enter Text"
       }
     ]
   }
