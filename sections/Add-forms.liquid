@@ -1,0 +1,19 @@
+{% assign collection = collections['all'] %}
+<ul>
+  {% for name in collection.products %}
+  <li>
+    <a style="color: {{ settings.link_color }}" href="{{ name.url }}">
+      {{ name.title }}
+      -{{ name.price | money }}
+      {% if name.available != true %} (SOLD OUT) {%endif%}
+    </a>
+  </li>
+  {%endfor%}
+</ul>
+
+{% schema %}
+{
+    "name":"section name",
+    "settings":[]
+}
+{% endschema %}
